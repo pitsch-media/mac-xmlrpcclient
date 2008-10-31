@@ -1,0 +1,44 @@
+{
+    IBClasses = (
+        {CLASS = BorderView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                changeFailureSoundName = id; 
+                changePlaySound = id; 
+                changeSuccessSoundName = id; 
+            }; 
+            CLASS = PreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                failureSoundNamePopUp = NSPopUpButton; 
+                failureSoundNameTextField = NSTextField; 
+                playSoundCheckbox = NSButton; 
+                successSoundNamePopUp = NSPopUpButton; 
+                successSoundNameTextField = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = XMLRPCDocument; LANGUAGE = ObjC; SUPERCLASS = NSDocument; }, 
+        {
+            ACTIONS = {clear = id; execute = id; stop = id; switchTab = id; }; 
+            CLASS = XMLRPCWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                executeButton = NSButton; 
+                methodField = NSTextField; 
+                objectResponseView = NSTextView; 
+                paramsText = NSText; 
+                progressIndicator = NSProgressIndicator; 
+                service = id; 
+                statusField = NSTextField; 
+                tabView = NSTabView; 
+                uriField = NSTextField; 
+                xmlRequestView = WebView; 
+                xmlResponseView = WebView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

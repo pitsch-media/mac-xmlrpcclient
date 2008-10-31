@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		8D15AC2E0486D014006FF6A4 /* XMLRPCWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* XMLRPCWindow.nib */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		9D3BA862090F2C6F0038A59F /* Preferences.nib in Resources */ = {isa = PBXBuildFile; fileRef = 9D3BA860090F2C6F0038A59F /* Preferences.nib */; };
+		9D936DC9091835E000F7B57C /* XMLRPCWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D936DC7091835E000F7B57C /* XMLRPCWindowController.m */; };
+		9D9829ED0912C954007B12B0 /* AppKitScripting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9829EC0912C954007B12B0 /* AppKitScripting.framework */; };
+		9D9829F30912C9B4007B12B0 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9829F20912C9B4007B12B0 /* AppleScriptKit.framework */; };
+		9D9E027B093D0935002AA8BC /* GSNSDataExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9E0279093D0935002AA8BC /* GSNSDataExtensions.m */; };
+		9DC91C76090F0D5A00F23437 /* appl.icns in Resources */ = {isa = PBXBuildFile; fileRef = 9DC91C75090F0D5A00F23437 /* appl.icns */; };
+		9DC91C7F090F0D7800F23437 /* attr.html in Resources */ = {isa = PBXBuildFile; fileRef = 9DC91C78090F0D7800F23437 /* attr.html */; };
+		9DC91C80090F0D7800F23437 /* closeStartTag.html in Resources */ = {isa = PBXBuildFile; fileRef = 9DC91C79090F0D7800F23437 /* closeStartTag.html */; };
+		9DC91C81090F0D7800F23437 /* endTag.html in Resources */ = {isa = PBXBuildFile; fileRef = 9DC91C7A090F0D7800F23437 /* endTag.html */; };
+		9DC91C82090F0D7800F23437 /* openStartTag.html in Resources */ = {isa = PBXBuildFile; fileRef = 9DC91C7B090F0D7800F23437 /* openStartTag.html */; };
+		9DC91C83090F0D7800F23437 /* params.html in Resources */ = {isa = PBXBuildFile; fileRef = 9DC91C7C090F0D7800F23437 /* params.html */; };
+		9DC91C84090F0D7800F23437 /* prettyPrintEnd.html in Resources */ = {isa = PBXBuildFile; fileRef = 9DC91C7D090F0D7800F23437 /* prettyPrintEnd.html */; };
+		9DC91C85090F0D7800F23437 /* prettyPrintStart.html in Resources */ = {isa = PBXBuildFile; fileRef = 9DC91C7E090F0D7800F23437 /* prettyPrintStart.html */; };
+		9DC91C9C090F0DBE00F23437 /* BorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC91C89090F0DBE00F23437 /* BorderView.m */; };
+		9DC91C9E090F0DBE00F23437 /* DHTMLPrettyPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC91C8B090F0DBE00F23437 /* DHTMLPrettyPrinter.m */; };
+		9DC91CA0090F0DBE00F23437 /* ParamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC91C8D090F0DBE00F23437 /* ParamParser.m */; };
+		9DC91CA2090F0DBE00F23437 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC91C8F090F0DBE00F23437 /* PreferenceController.m */; };
+		9DC91CA4090F0DBE00F23437 /* RancheroXMLRPCServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC91C91090F0DBE00F23437 /* RancheroXMLRPCServiceImpl.m */; };
+		9DC91D07090F110A00F23437 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC91D06090F110A00F23437 /* WebKit.framework */; };
+		9DC91D13090F112E00F23437 /* XMLRPCCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC91D0D090F112E00F23437 /* XMLRPCCall.m */; };
+		9DC91D15090F112E00F23437 /* XMLRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC91D0F090F112E00F23437 /* XMLRPCRequest.m */; };
+		9DC91D17090F112E00F23437 /* XMLRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC91D11090F112E00F23437 /* XMLRPCResponse.m */; };
+		9DE4EE63090F3AF40065C56C /* FaultChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE4EE61090F3AF40065C56C /* FaultChecker.m */; };
+		D31B33270EBA99E9006F3012 /* XMLRPCDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D31B33260EBA99E9006F3012 /* XMLRPCDocument.m */; };
+		D31B34730EBAA9E8006F3012 /* CURLHandle+extras.m in Sources */ = {isa = PBXBuildFile; fileRef = D31B346F0EBAA9E8006F3012 /* CURLHandle+extras.m */; };
+		D31B34740EBAA9E8006F3012 /* CURLHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D31B34710EBAA9E8006F3012 /* CURLHandle.m */; };
+		D31B347E0EBAAA32006F3012 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B347D0EBAAA32006F3012 /* SystemConfiguration.framework */; };
+		D31B348E0EBAAA96006F3012 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D31B348D0EBAAA96006F3012 /* libcurl.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D31B34120EBAA4BC006F3012 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/XMLRPCWindow.nib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* XML-RPC Client_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XML-RPC Client_Prefix.pch"; sourceTree = "<group>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* XML-RPC Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XML-RPC Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3BA861090F2C6F0038A59F /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Preferences.nib; sourceTree = "<group>"; };
+		9D936DC6091835E000F7B57C /* XMLRPCWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCWindowController.h; path = src/XMLRPCWindowController.h; sourceTree = "<group>"; };
+		9D936DC7091835E000F7B57C /* XMLRPCWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCWindowController.m; path = src/XMLRPCWindowController.m; sourceTree = "<group>"; };
+		9D9829EC0912C954007B12B0 /* AppKitScripting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKitScripting.framework; path = /System/Library/Frameworks/AppKitScripting.framework; sourceTree = "<absolute>"; };
+		9D9829F20912C9B4007B12B0 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
+		9D9E0278093D0935002AA8BC /* GSNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GSNSDataExtensions.h; path = src/GSNSDataExtensions.h; sourceTree = "<group>"; };
+		9D9E0279093D0935002AA8BC /* GSNSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = GSNSDataExtensions.m; path = src/GSNSDataExtensions.m; sourceTree = "<group>"; };
+		9DC91C75090F0D5A00F23437 /* appl.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = appl.icns; path = res/appl.icns; sourceTree = "<group>"; };
+		9DC91C78090F0D7800F23437 /* attr.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = attr.html; path = res/attr.html; sourceTree = "<group>"; };
+		9DC91C79090F0D7800F23437 /* closeStartTag.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = closeStartTag.html; path = res/closeStartTag.html; sourceTree = "<group>"; };
+		9DC91C7A090F0D7800F23437 /* endTag.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = endTag.html; path = res/endTag.html; sourceTree = "<group>"; };
+		9DC91C7B090F0D7800F23437 /* openStartTag.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = openStartTag.html; path = res/openStartTag.html; sourceTree = "<group>"; };
+		9DC91C7C090F0D7800F23437 /* params.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = params.html; path = res/params.html; sourceTree = "<group>"; };
+		9DC91C7D090F0D7800F23437 /* prettyPrintEnd.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = prettyPrintEnd.html; path = res/prettyPrintEnd.html; sourceTree = "<group>"; };
+		9DC91C7E090F0D7800F23437 /* prettyPrintStart.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = prettyPrintStart.html; path = res/prettyPrintStart.html; sourceTree = "<group>"; };
+		9DC91C89090F0DBE00F23437 /* BorderView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = BorderView.m; path = src/BorderView.m; sourceTree = "<group>"; };
+		9DC91C8A090F0DBE00F23437 /* DHTMLPrettyPrinter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DHTMLPrettyPrinter.h; path = src/DHTMLPrettyPrinter.h; sourceTree = "<group>"; };
+		9DC91C8B090F0DBE00F23437 /* DHTMLPrettyPrinter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = DHTMLPrettyPrinter.m; path = src/DHTMLPrettyPrinter.m; sourceTree = "<group>"; };
+		9DC91C8C090F0DBE00F23437 /* ParamParser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ParamParser.h; path = src/ParamParser.h; sourceTree = "<group>"; };
+		9DC91C8D090F0DBE00F23437 /* ParamParser.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = ParamParser.m; path = src/ParamParser.m; sourceTree = "<group>"; };
+		9DC91C8E090F0DBE00F23437 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = PreferenceController.h; path = src/PreferenceController.h; sourceTree = "<group>"; };
+		9DC91C8F090F0DBE00F23437 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = PreferenceController.m; path = src/PreferenceController.m; sourceTree = "<group>"; };
+		9DC91C90090F0DBE00F23437 /* RancheroXMLRPCServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = RancheroXMLRPCServiceImpl.h; path = src/RancheroXMLRPCServiceImpl.h; sourceTree = "<group>"; };
+		9DC91C91090F0DBE00F23437 /* RancheroXMLRPCServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = RancheroXMLRPCServiceImpl.m; path = src/RancheroXMLRPCServiceImpl.m; sourceTree = "<group>"; };
+		9DC91C9A090F0DBE00F23437 /* XMLRPCService.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = XMLRPCService.h; path = src/XMLRPCService.h; sourceTree = "<group>"; };
+		9DC91D06090F110A00F23437 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		9DC91D0C090F112E00F23437 /* XMLRPCCall.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = XMLRPCCall.h; sourceTree = "<group>"; };
+		9DC91D0D090F112E00F23437 /* XMLRPCCall.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = XMLRPCCall.m; sourceTree = "<group>"; };
+		9DC91D0E090F112E00F23437 /* XMLRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = XMLRPCRequest.h; sourceTree = "<group>"; };
+		9DC91D0F090F112E00F23437 /* XMLRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = XMLRPCRequest.m; sourceTree = "<group>"; };
+		9DC91D10090F112E00F23437 /* XMLRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = XMLRPCResponse.h; sourceTree = "<group>"; };
+		9DC91D11090F112E00F23437 /* XMLRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = XMLRPCResponse.m; sourceTree = "<group>"; };
+		9DE4EE60090F3AF40065C56C /* FaultChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FaultChecker.h; path = src/FaultChecker.h; sourceTree = "<group>"; };
+		9DE4EE61090F3AF40065C56C /* FaultChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FaultChecker.m; path = src/FaultChecker.m; sourceTree = "<group>"; };
+		D31B33250EBA99E9006F3012 /* XMLRPCDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLRPCDocument.h; path = src/XMLRPCDocument.h; sourceTree = "<group>"; };
+		D31B33260EBA99E9006F3012 /* XMLRPCDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLRPCDocument.m; path = src/XMLRPCDocument.m; sourceTree = "<group>"; };
+		D31B34640EBAA9C2006F3012 /* BorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BorderView.h; path = src/BorderView.h; sourceTree = "<group>"; };
+		D31B346F0EBAA9E8006F3012 /* CURLHandle+extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CURLHandle+extras.m"; path = "src/CURLHandle/CURLHandle+extras.m"; sourceTree = "<group>"; };
+		D31B34700EBAA9E8006F3012 /* CURLHandle+extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CURLHandle+extras.h"; path = "src/CURLHandle/CURLHandle+extras.h"; sourceTree = "<group>"; };
+		D31B34710EBAA9E8006F3012 /* CURLHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CURLHandle.m; path = src/CURLHandle/CURLHandle.m; sourceTree = "<group>"; };
+		D31B34720EBAA9E8006F3012 /* CURLHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CURLHandle.h; path = src/CURLHandle/CURLHandle.h; sourceTree = "<group>"; };
+		D31B347D0EBAAA32006F3012 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		D31B348D0EBAAA96006F3012 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				9DC91D07090F110A00F23437 /* WebKit.framework in Frameworks */,
+				9D9829ED0912C954007B12B0 /* AppKitScripting.framework in Frameworks */,
+				9D9829F30912C9B4007B12B0 /* AppleScriptKit.framework in Frameworks */,
+				D31B347E0EBAAA32006F3012 /* SystemConfiguration.framework in Frameworks */,
+				D31B348E0EBAAA96006F3012 /* libcurl.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D31B348D0EBAAA96006F3012 /* libcurl.dylib */,
+				D31B347D0EBAAA32006F3012 /* SystemConfiguration.framework */,
+				9D9829F20912C9B4007B12B0 /* AppleScriptKit.framework */,
+				9D9829EC0912C954007B12B0 /* AppKitScripting.framework */,
+				9DC91D06090F110A00F23437 /* WebKit.framework */,
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* XML-RPC Client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* XML-RPC Client */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = "XML-RPC Client";
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D31B34630EBAA9A5006F3012 /* Base64 */,
+				D31B34620EBAA99A006F3012 /* CURLHandle */,
+				9DC91D0B090F112E00F23437 /* XMLRPC */,
+				D31B34640EBAA9C2006F3012 /* BorderView.h */,
+				9DC91C89090F0DBE00F23437 /* BorderView.m */,
+				9DC91C8A090F0DBE00F23437 /* DHTMLPrettyPrinter.h */,
+				9DC91C8B090F0DBE00F23437 /* DHTMLPrettyPrinter.m */,
+				9DC91C8C090F0DBE00F23437 /* ParamParser.h */,
+				9DC91C8D090F0DBE00F23437 /* ParamParser.m */,
+				9DC91C8E090F0DBE00F23437 /* PreferenceController.h */,
+				9DC91C8F090F0DBE00F23437 /* PreferenceController.m */,
+				9DC91C9A090F0DBE00F23437 /* XMLRPCService.h */,
+				9DC91C90090F0DBE00F23437 /* RancheroXMLRPCServiceImpl.h */,
+				9DC91C91090F0DBE00F23437 /* RancheroXMLRPCServiceImpl.m */,
+				9DE4EE60090F3AF40065C56C /* FaultChecker.h */,
+				9DE4EE61090F3AF40065C56C /* FaultChecker.m */,
+				D31B33250EBA99E9006F3012 /* XMLRPCDocument.h */,
+				D31B33260EBA99E9006F3012 /* XMLRPCDocument.m */,
+				9D936DC6091835E000F7B57C /* XMLRPCWindowController.h */,
+				9D936DC7091835E000F7B57C /* XMLRPCWindowController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF750370BD2300C91783 /* XML-RPC Client_Prefix.pch */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DC91C77090F0D6800F23437 /* HTML */,
+				9DC91C74090F0D4600F23437 /* Images */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* XMLRPCWindow.nib */,
+				9D3BA860090F2C6F0038A59F /* Preferences.nib */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DC91C74090F0D4600F23437 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9DC91C75090F0D5A00F23437 /* appl.icns */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9DC91C77090F0D6800F23437 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				9DC91C78090F0D7800F23437 /* attr.html */,
+				9DC91C79090F0D7800F23437 /* closeStartTag.html */,
+				9DC91C7A090F0D7800F23437 /* endTag.html */,
+				9DC91C7B090F0D7800F23437 /* openStartTag.html */,
+				9DC91C7C090F0D7800F23437 /* params.html */,
+				9DC91C7D090F0D7800F23437 /* prettyPrintEnd.html */,
+				9DC91C7E090F0D7800F23437 /* prettyPrintStart.html */,
+			);
+			name = HTML;
+			sourceTree = "<group>";
+		};
+		9DC91D0B090F112E00F23437 /* XMLRPC */ = {
+			isa = PBXGroup;
+			children = (
+				9DC91D0C090F112E00F23437 /* XMLRPCCall.h */,
+				9DC91D0D090F112E00F23437 /* XMLRPCCall.m */,
+				9DC91D0E090F112E00F23437 /* XMLRPCRequest.h */,
+				9DC91D0F090F112E00F23437 /* XMLRPCRequest.m */,
+				9DC91D10090F112E00F23437 /* XMLRPCResponse.h */,
+				9DC91D11090F112E00F23437 /* XMLRPCResponse.m */,
+			);
+			name = XMLRPC;
+			path = src/XMLRPC;
+			sourceTree = "<group>";
+		};
+		D31B34620EBAA99A006F3012 /* CURLHandle */ = {
+			isa = PBXGroup;
+			children = (
+				D31B34700EBAA9E8006F3012 /* CURLHandle+extras.h */,
+				D31B346F0EBAA9E8006F3012 /* CURLHandle+extras.m */,
+				D31B34720EBAA9E8006F3012 /* CURLHandle.h */,
+				D31B34710EBAA9E8006F3012 /* CURLHandle.m */,
+			);
+			name = CURLHandle;
+			sourceTree = "<group>";
+		};
+		D31B34630EBAA9A5006F3012 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				9D9E0278093D0935002AA8BC /* GSNSDataExtensions.h */,
+				9D9E0279093D0935002AA8BC /* GSNSDataExtensions.m */,
+			);
+			name = Base64;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* XML-RPC Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DC91C52090F0CDE00F23437 /* Build configuration list for PBXNativeTarget "XML-RPC Client" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				D31B34120EBAA4BC006F3012 /* CopyFiles */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XML-RPC Client";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "XML-RPC Client";
+			productReference = 8D15AC370486D014006FF6A4 /* XML-RPC Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9DC91C56090F0CDE00F23437 /* Build configuration list for PBXProject "XML-RPC Client" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* XML-RPC Client */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* XML-RPC Client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
+				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
+				8D15AC2E0486D014006FF6A4 /* XMLRPCWindow.nib in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				9DC91C76090F0D5A00F23437 /* appl.icns in Resources */,
+				9DC91C7F090F0D7800F23437 /* attr.html in Resources */,
+				9DC91C80090F0D7800F23437 /* closeStartTag.html in Resources */,
+				9DC91C81090F0D7800F23437 /* endTag.html in Resources */,
+				9DC91C82090F0D7800F23437 /* openStartTag.html in Resources */,
+				9DC91C83090F0D7800F23437 /* params.html in Resources */,
+				9DC91C84090F0D7800F23437 /* prettyPrintEnd.html in Resources */,
+				9DC91C85090F0D7800F23437 /* prettyPrintStart.html in Resources */,
+				9D3BA862090F2C6F0038A59F /* Preferences.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				9DC91C9C090F0DBE00F23437 /* BorderView.m in Sources */,
+				9DC91C9E090F0DBE00F23437 /* DHTMLPrettyPrinter.m in Sources */,
+				9DC91CA0090F0DBE00F23437 /* ParamParser.m in Sources */,
+				9DC91CA2090F0DBE00F23437 /* PreferenceController.m in Sources */,
+				9DC91CA4090F0DBE00F23437 /* RancheroXMLRPCServiceImpl.m in Sources */,
+				9DC91D13090F112E00F23437 /* XMLRPCCall.m in Sources */,
+				9DC91D15090F112E00F23437 /* XMLRPCRequest.m in Sources */,
+				9DC91D17090F112E00F23437 /* XMLRPCResponse.m in Sources */,
+				9DE4EE63090F3AF40065C56C /* FaultChecker.m in Sources */,
+				9D936DC9091835E000F7B57C /* XMLRPCWindowController.m in Sources */,
+				9D9E027B093D0935002AA8BC /* GSNSDataExtensions.m in Sources */,
+				D31B33270EBA99E9006F3012 /* XMLRPCDocument.m in Sources */,
+				D31B34730EBAA9E8006F3012 /* CURLHandle+extras.m in Sources */,
+				D31B34740EBAA9E8006F3012 /* CURLHandle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* XMLRPCWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B5FDCFA73011CA2CEA /* English */,
+			);
+			name = XMLRPCWindow.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9D3BA860090F2C6F0038A59F /* Preferences.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D3BA861090F2C6F0038A59F /* English */,
+			);
+			name = Preferences.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DC91C53090F0CDE00F23437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/frameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XML-RPC Client_Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = "XML-RPC Client";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		9DC91C54090F0CDE00F23437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/frameworks\"";
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XML-RPC Client_Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PREBINDING = NO;
+				PRODUCT_NAME = "XML-RPC Client";
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9DC91C57090F0CDE00F23437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		9DC91C58090F0CDE00F23437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = ppc;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DC91C52090F0CDE00F23437 /* Build configuration list for PBXNativeTarget "XML-RPC Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC91C53090F0CDE00F23437 /* Debug */,
+				9DC91C54090F0CDE00F23437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9DC91C56090F0CDE00F23437 /* Build configuration list for PBXProject "XML-RPC Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC91C57090F0CDE00F23437 /* Debug */,
+				9DC91C58090F0CDE00F23437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

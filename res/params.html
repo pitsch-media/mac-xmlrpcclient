@@ -1,0 +1,56 @@
+
+
+<script type="text/javascript">
+
+function Base64(s) {
+	this.dataString = s;
+}
+
+function Base64Encode(s) {
+	this.dataString = s;
+}
+
+function doEval(paramString) {
+	paramString = "[" + paramString + "]";
+	var params;
+	try {
+		params = eval(paramString);
+	} catch (e) {
+		params = ["Param Eval Error: " + e];
+	}
+	ParamParser.setParams(params);
+}
+
+function BOOL(val) {
+	this.value = val;
+}
+
+function isArray(obj) {
+	if (obj instanceof Array) {
+		return new BOOL(1);
+	}
+	return new BOOL(0);
+}
+
+function isDate(obj) {
+	if (obj instanceof Date) {
+		return new BOOL(1);
+	}
+	return new BOOL(0);
+}
+
+function isBase64(obj) {
+	if (obj instanceof Base64) {
+		return new BOOL(1);
+	}
+	return new BOOL(0);
+}
+
+function isBase64Encode(obj) {
+	if (obj instanceof Base64Encode) {
+		return new BOOL(1);
+	}
+	return new BOOL(0);
+}
+
+</script>

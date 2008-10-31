@@ -1,0 +1,53 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {execute = id; switchTab = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                clear = id; 
+                execute = id; 
+                performFindPanelAction = id; 
+                stop = id; 
+                switchTab = id; 
+            }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                executeButton = NSButton; 
+                mainWin = NSWindow; 
+                methodField = NSTextField; 
+                objectResponseView = WebView; 
+                paramsText = NSText; 
+                progressIndicator = NSProgressIndicator; 
+                statusField = NSTextField; 
+                tabView = NSTabView; 
+                uriField = NSTextField; 
+                xmlRequestView = WebView; 
+                xmlResponseView = WebView; 
+            }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {
+                changeFailureSoundName = id; 
+                changePlaySound = id; 
+                changeSuccessSoundName = id; 
+            }; 
+            CLASS = PreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                failureSoundNamePopUp = NSPopUpButton; 
+                failureSoundNameTextField = NSTextField; 
+                playSoundCheckbox = NSButton; 
+                successSoundNamePopUp = NSPopUpButton; 
+                successSoundNameTextField = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

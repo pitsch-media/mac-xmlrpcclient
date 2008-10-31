@@ -1,0 +1,23 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                changeFailureSoundName = id; 
+                changePlaySound = id; 
+                changeSuccessSoundName = id; 
+            }; 
+            CLASS = PreferenceController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                failureSoundNamePopUp = NSPopUpButton; 
+                failureSoundNameTextField = NSTextField; 
+                playSoundCheckbox = NSButton; 
+                successSoundNamePopUp = NSPopUpButton; 
+                successSoundNameTextField = NSTextField; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

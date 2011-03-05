@@ -257,7 +257,7 @@ size_t curlHeaderFunction(void *ptr, size_t size, size_t nmemb, void *inSelf)
 
 + (NSString *) curlVersion
 {
-	return [NSString stringWithCString: curl_version()];
+	return [NSString stringWithUTF8String:curl_version()];
 }
 
 
@@ -658,13 +658,13 @@ Otherwise, we try to get it by just getting a header with that property name (ca
 		
 		if (proxyHost && proxyPort)
 		{
-			mResult = curl_easy_setopt(mCURL, CURLOPT_PROXY, [proxyHost cString]);
+			mResult = curl_easy_setopt(mCURL, CURLOPT_PROXY, [proxyHost UTF8String]);
 			mResult = curl_easy_setopt(mCURL, CURLOPT_PROXYPORT, [proxyPort longValue]);
 
 			// Now, provide a user/password if one is globally set.
 			if (nil != sProxyUserIDAndPassword)
 			{
-				mResult = curl_easy_setopt(mCURL, CURLOPT_PROXYUSERPWD, [sProxyUserIDAndPassword cString] );
+				mResult = curl_easy_setopt(mCURL, CURLOPT_PROXYUSERPWD, [sProxyUserIDAndPassword UTF8String] );
 			}
 		}
 	}
@@ -677,13 +677,13 @@ Otherwise, we try to get it by just getting a header with that property name (ca
 		{
 			id theValue = [mHTTPHeaders objectForKey:theKey];
 			NSString *pair = [NSString stringWithFormat:@"%@: %@",theKey,theValue];
-			httpHeaders = curl_slist_append( httpHeaders, [pair cString] );
+			httpHeaders = curl_slist_append( httpHeaders, [pair UTF8String] );
 		}
 		curl_easy_setopt(mCURL, CURLOPT_HTTPHEADER, httpHeaders);
 	}
 
 	// Set the URL
-	mResult = curl_easy_setopt(mCURL, CURLOPT_URL, [[mNSURL absoluteString] cString]);
+	mResult = curl_easy_setopt(mCURL, CURLOPT_URL, [[mNSURL absoluteString] UTF8String]);
 	if (0 != mResult)
 	{
 		return;
@@ -836,7 +836,7 @@ Otherwise, we try to get it by just getting a header with that property name (ca
 
 - (NSString *)curlError
 {
-	NSString *result = [NSString stringWithCString:mErrorBuffer];
+	NSString *result = [NSString stringWithUTF8String:mErrorBuffer];
 	if (nil == result)
 	{
 		result = [NSString stringWithFormat:@"(curl result code # %d)", mResult];
@@ -1127,8 +1127,8 @@ the rest of the data on line (following ":")
 {
 	NSMutableArray *result	= [NSMutableArray array];
 	NSRange range = NSMakeRange(0,0);
-	unsigned start, end;
-	unsigned contentsEnd = 0;
+	NSUInteger start, end;
+	NSUInteger contentsEnd = 0;
 	
 	while (contentsEnd < [self length])
 	{

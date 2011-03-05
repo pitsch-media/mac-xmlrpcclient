@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface FaultChecker : NSObject {
+@interface FaultChecker : NSObject <NSXMLParserDelegate> {
 	int tagCount;
 	BOOL finishedParsing;
 	BOOL containsFault;

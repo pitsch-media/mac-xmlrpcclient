@@ -1,0 +1,88 @@
+XML RPC Client is a Developer Tool that allows you to access and debug XML-RPC web services from the comfort of your desktop.
+
+Using XML RPC Client is easy:
+
+1. Type in the desired XML-RPC Endpoint URL.
+
+2. Type in the specific desired XML-RPC function to call.
+
+3. Now the interesting part… type in the params for your XML-RPC function call using JavaScript syntax for all of the XML-RPC datatypes (including arrays, structs, dates, and base64 values to an arbitrary depth).
+
+4. Click "Execute".
+
+
+Upon completing the function call you will see three groups of information in the main tabbed display:
+
+1. XML Request: This is the raw XML request you have just sent to the server.
+2. XML Response: This is the raw XML response you have just received from the server.
+3. Object Response: This is a psuedo-code representation of the objects that were returned from the server.
+
+To specify params, you can use JavaScript syntax. For example, say you had a function that accepted a single string argument. You would write the following in the "Params" text area:
+
+    "my arg"
+
+or
+
+    'my arg'
+
+If you had a function that accepts two arguments of type integer and boolean:
+
+    42, true
+
+If you had a function that accepts a single array argument containing integers:
+
+    [1, 2, 3]
+
+A function that accepts a single struct argument:
+
+    {name: 'Joe', age: 27, jobs:['developer', 'exotic dancer']}
+
+Note that unlike Python, the struct keys are not quoted.
+
+
+For the dateTime.iso8601 data type, you use the simple JavaScript Date class in the params text area. For example, if you wanted to call an XML-RPC function with a single param of type dateTime.iso8601 with a value of today's date, you would type the following in the params text area:
+
+    new Date()
+        
+This would result in something like the following raw XML param:
+
+    <dateTime.iso8601>
+        20051129T18:13:48    
+    </dateTime.iso8601>
+        
+For October 26, 1977, you could type any of the following (depending on your locale settings):
+
+    new Date("10/26/77") // you might have to reverse the month/day if your default locale is not US
+        
+    new Date("1977/10/26")
+        
+    new Date("October 26, 1977")
+        
+Resulting raw XML:
+
+    <dateTime.iso8601>
+        19771026T00:00:00    
+    </dateTime.iso8601>
+        
+
+Support for the XML-RPC base64 data type is also implemented. Say you want to send a base64 param with the string value of "yo dude". You need this to be encoded into base64 as part of the process:
+
+    new Base64Encode("yo dude")
+        
+Note that the JavaScript data type used is Base64Encode. This data type not only creates a base64 param out of your string value, it also encodes your string value in the process.
+
+Here's the resulting XML with the string value encoded that will be sent across the pipes:
+
+    <base64>
+        eW8gZHVkZQ==
+    </base64>
+        
+So say you have already attained the encoded value for this string (or an image or whatever). You just want that literal value to show up inside the base64 element in the XML request... you don't want the string value re-encoded again. In that case you use the plain old Base64 custom class in your param string:
+
+    new Base64("eW8gZHVkZQ==")
+        
+You will once again see this in the raw XML request:
+
+    <base64>
+        eW8gZHVkZQ==    
+    </base64>

@@ -32,7 +32,6 @@
 		D3EA1F37132284B2004C1718 /* params.html in Resources */ = {isa = PBXBuildFile; fileRef = D3EA1F2E132284B2004C1718 /* params.html */; };
 		D3EA1F38132284B2004C1718 /* prettyPrintEnd.html in Resources */ = {isa = PBXBuildFile; fileRef = D3EA1F2F132284B2004C1718 /* prettyPrintEnd.html */; };
 		D3EA1F39132284B2004C1718 /* prettyPrintStart.html in Resources */ = {isa = PBXBuildFile; fileRef = D3EA1F30132284B2004C1718 /* prettyPrintStart.html */; };
-		D3EA1F3A132284B2004C1718 /* appl.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3EA1F32132284B2004C1718 /* appl.icns */; };
 		D3EA2009132284DC004C1718 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EA2006132284DC004C1718 /* AppleScriptKit.framework */; };
 		D3EA200B132284DC004C1718 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EA2008132284DC004C1718 /* WebKit.framework */; };
 		D3EA200D132284E4004C1718 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EA200C132284E4004C1718 /* SystemConfiguration.framework */; };
@@ -40,6 +39,9 @@
 		D3EA20A213228738004C1718 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3EA209C13228738004C1718 /* MainMenu.xib */; };
 		D3EA20A313228738004C1718 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3EA209E13228738004C1718 /* Preferences.xib */; };
 		D3EA20A413228738004C1718 /* XMLRPCWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3EA20A013228738004C1718 /* XMLRPCWindow.xib */; };
+		D3EA20F51322A4AB004C1718 /* xmlrpcclient.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3EA20F41322A4AB004C1718 /* xmlrpcclient.icns */; };
+		D3EA20FE1322A502004C1718 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EA20FD1322A502004C1718 /* iTunesArtwork.png */; };
+		D3EA212E1322A9FD004C1718 /* xmlrpcclientdoc.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3EA212D1322A9FD004C1718 /* xmlrpcclientdoc.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +53,7 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* XMLRPCClient-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XMLRPCClient-Info.plist"; sourceTree = "<group>"; };
-		8D15AC370486D014006FF6A4 /* xmlrpc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xmlrpc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D15AC370486D014006FF6A4 /* XML-RPC Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XML-RPC Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EA1EFC13228496004C1718 /* GSNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSNSDataExtensions.h; path = src/GSNSDataExtensions.h; sourceTree = "<group>"; };
 		D3EA1EFD13228496004C1718 /* GSNSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSNSDataExtensions.m; path = src/GSNSDataExtensions.m; sourceTree = "<group>"; };
 		D3EA1EFF13228496004C1718 /* CURLHandle+extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CURLHandle+extras.h"; path = "src/CURLHandle/CURLHandle+extras.h"; sourceTree = "<group>"; };
@@ -88,7 +90,6 @@
 		D3EA1F2E132284B2004C1718 /* params.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = params.html; path = res/params.html; sourceTree = "<group>"; };
 		D3EA1F2F132284B2004C1718 /* prettyPrintEnd.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = prettyPrintEnd.html; path = res/prettyPrintEnd.html; sourceTree = "<group>"; };
 		D3EA1F30132284B2004C1718 /* prettyPrintStart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = prettyPrintStart.html; path = res/prettyPrintStart.html; sourceTree = "<group>"; };
-		D3EA1F32132284B2004C1718 /* appl.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = appl.icns; path = res/appl.icns; sourceTree = "<group>"; };
 		D3EA2006132284DC004C1718 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
 		D3EA2008132284DC004C1718 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		D3EA200C132284E4004C1718 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
@@ -96,6 +97,9 @@
 		D3EA209D13228738004C1718 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D3EA209F13228738004C1718 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
 		D3EA20A113228738004C1718 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/XMLRPCWindow.xib; sourceTree = "<group>"; };
+		D3EA20F41322A4AB004C1718 /* xmlrpcclient.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = xmlrpcclient.icns; path = res/xmlrpcclient.icns; sourceTree = "<group>"; };
+		D3EA20FD1322A502004C1718 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = res/iTunesArtwork.png; sourceTree = "<group>"; };
+		D3EA212D1322A9FD004C1718 /* xmlrpcclientdoc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = xmlrpcclientdoc.icns; path = res/xmlrpcclientdoc.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +141,7 @@
 		19C28FB0FE9D524F11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D15AC370486D014006FF6A4 /* xmlrpc.app */,
+				8D15AC370486D014006FF6A4 /* XML-RPC Client.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,7 +267,9 @@
 		D3EA1F31132284B2004C1718 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D3EA1F32132284B2004C1718 /* appl.icns */,
+				D3EA20FD1322A502004C1718 /* iTunesArtwork.png */,
+				D3EA20F41322A4AB004C1718 /* xmlrpcclient.icns */,
+				D3EA212D1322A9FD004C1718 /* xmlrpcclientdoc.icns */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -305,7 +311,7 @@
 			name = "XML-RPC Client";
 			productInstallPath = "$(HOME)/Applications";
 			productName = xmlrpc;
-			productReference = 8D15AC370486D014006FF6A4 /* xmlrpc.app */;
+			productReference = 8D15AC370486D014006FF6A4 /* XML-RPC Client.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -346,10 +352,12 @@
 				D3EA1F37132284B2004C1718 /* params.html in Resources */,
 				D3EA1F38132284B2004C1718 /* prettyPrintEnd.html in Resources */,
 				D3EA1F39132284B2004C1718 /* prettyPrintStart.html in Resources */,
-				D3EA1F3A132284B2004C1718 /* appl.icns in Resources */,
 				D3EA20A213228738004C1718 /* MainMenu.xib in Resources */,
 				D3EA20A313228738004C1718 /* Preferences.xib in Resources */,
 				D3EA20A413228738004C1718 /* XMLRPCWindow.xib in Resources */,
+				D3EA20F51322A4AB004C1718 /* xmlrpcclient.icns in Resources */,
+				D3EA20FE1322A502004C1718 /* iTunesArtwork.png in Resources */,
+				D3EA212E1322A9FD004C1718 /* xmlrpcclientdoc.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +446,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "XMLRPCClient-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = xmlrpc;
+				PRODUCT_NAME = "XML-RPC Client";
 				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;

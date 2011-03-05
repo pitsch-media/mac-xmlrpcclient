@@ -37,7 +37,7 @@ NSString *PrettyPrinterKey = @"PrettyPrinterKey";
 
 - (void)doParse:(NSData *)data {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-	NSXMLParser *parser = [[NSXMLParser alloc] initWithData:data];
+	NSXMLParser *parser = [[[NSXMLParser alloc] initWithData:data] autorelease];
 	if (data == reqData) {
 		reqParser = parser;
 	} else {
@@ -52,7 +52,8 @@ NSString *PrettyPrinterKey = @"PrettyPrinterKey";
 - (NSString *)contentsOfResourceWithName:(NSString *)name ofType:(NSString *)type {
 	NSBundle *bundle = [NSBundle mainBundle];
 	NSString *path = [bundle pathForResource:name ofType:type];
-	return [NSString stringWithContentsOfURL:[NSURL fileURLWithPath:path]];
+    NSURL *furl = [NSURL fileURLWithPath:path];
+	return [NSString stringWithContentsOfURL:furl encoding:NSUTF8StringEncoding error:nil];
 }
 
 - (NSMutableString *)resultStringForParser:(NSXMLParser *)parser {

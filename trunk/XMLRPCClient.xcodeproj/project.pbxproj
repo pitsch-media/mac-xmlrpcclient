@@ -34,7 +34,6 @@
 		D3EA1F39132284B2004C1718 /* prettyPrintStart.html in Resources */ = {isa = PBXBuildFile; fileRef = D3EA1F30132284B2004C1718 /* prettyPrintStart.html */; };
 		D3EA1F3A132284B2004C1718 /* appl.icns in Resources */ = {isa = PBXBuildFile; fileRef = D3EA1F32132284B2004C1718 /* appl.icns */; };
 		D3EA2009132284DC004C1718 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EA2006132284DC004C1718 /* AppleScriptKit.framework */; };
-		D3EA200A132284DC004C1718 /* AppKitScripting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EA2007132284DC004C1718 /* AppKitScripting.framework */; };
 		D3EA200B132284DC004C1718 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EA2008132284DC004C1718 /* WebKit.framework */; };
 		D3EA200D132284E4004C1718 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EA200C132284E4004C1718 /* SystemConfiguration.framework */; };
 		D3EA201E13228531004C1718 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EA201D13228531004C1718 /* libcurl.dylib */; };
@@ -91,7 +90,6 @@
 		D3EA1F30132284B2004C1718 /* prettyPrintStart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = prettyPrintStart.html; path = res/prettyPrintStart.html; sourceTree = "<group>"; };
 		D3EA1F32132284B2004C1718 /* appl.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = appl.icns; path = res/appl.icns; sourceTree = "<group>"; };
 		D3EA2006132284DC004C1718 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
-		D3EA2007132284DC004C1718 /* AppKitScripting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKitScripting.framework; path = /System/Library/Frameworks/AppKitScripting.framework; sourceTree = "<absolute>"; };
 		D3EA2008132284DC004C1718 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		D3EA200C132284E4004C1718 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
 		D3EA201D13228531004C1718 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
@@ -107,7 +105,6 @@
 			files = (
 				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
 				D3EA2009132284DC004C1718 /* AppleScriptKit.framework in Frameworks */,
-				D3EA200A132284DC004C1718 /* AppKitScripting.framework in Frameworks */,
 				D3EA200B132284DC004C1718 /* WebKit.framework in Frameworks */,
 				D3EA200D132284E4004C1718 /* SystemConfiguration.framework in Frameworks */,
 				D3EA201E13228531004C1718 /* libcurl.dylib in Frameworks */,
@@ -122,7 +119,6 @@
 			children = (
 				D3EA200C132284E4004C1718 /* SystemConfiguration.framework */,
 				D3EA2006132284DC004C1718 /* AppleScriptKit.framework */,
-				D3EA2007132284DC004C1718 /* AppKitScripting.framework */,
 				D3EA2008132284DC004C1718 /* WebKit.framework */,
 				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
 			);
@@ -439,6 +435,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = XMLRPCClient_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "XMLRPCClient-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = xmlrpc;
@@ -455,6 +452,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = XMLRPCClient_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "XMLRPCClient-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = "XML-RPC Client";

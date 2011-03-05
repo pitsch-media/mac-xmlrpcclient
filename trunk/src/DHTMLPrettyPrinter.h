@@ -12,7 +12,7 @@ extern NSString *RequestKey;
 extern NSString *ResponseKey;
 extern NSString *PrettyPrinterKey;
 
-@interface DHTMLPrettyPrinter : NSObject {
+@interface DHTMLPrettyPrinter : NSObject <NSXMLParserDelegate> {
 	id delegate;
 	NSXMLParser *reqParser;
 	NSXMLParser *resParser;

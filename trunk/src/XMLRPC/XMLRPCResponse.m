@@ -503,7 +503,7 @@ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMA
 	short i, ixinbuf;
 	Boolean flignore;
 	Boolean flendtext = false;
-	const unsigned char *tempcstring;
+	const char *tempcstring;
 	NSMutableData *d;
 	
 	if (base64String == nil)
@@ -511,7 +511,7 @@ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMA
 		
 	ixtext = 0;
 	
-	tempcstring = [base64String cString];
+	tempcstring = [base64String UTF8String];
 	
 	lentext = [base64String length];
 	

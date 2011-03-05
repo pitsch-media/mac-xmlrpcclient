@@ -45,7 +45,7 @@ extern NSString				*sProxyUserIDAndPassword;
 extern size_t curlBodyFunction(void *ptr, size_t size, size_t nmemb, void *inSelf);
 extern size_t curlHeaderFunction(void *ptr, size_t size, size_t nmemb, void *inSelf);
 
-@interface CURLHandle : NSURLHandle
+@interface CURLHandle : NSURLHandle <NSPortDelegate>
 {
 	NSThread		*mMainThread;			/*" Reference to main thread so thread can determine if it's a background thread or not "*/
 	CURL			*mCURL;					/*" Pointer to the actual CURL object that does all the hard work "*/

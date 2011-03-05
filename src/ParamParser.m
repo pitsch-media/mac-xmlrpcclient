@@ -122,7 +122,7 @@
 }
 
 - (NSDate *)convertToDate:(WebScriptObject *)obj {
-	NSDateComponents *comps = [[NSDateComponents alloc] init];
+	NSDateComponents *comps = [[[NSDateComponents alloc] init] autorelease];
 	
 	[comps setSecond:[[obj callWebScriptMethod:@"getSeconds"  withArguments:nil] intValue]];
 	[comps setMinute:[[obj callWebScriptMethod:@"getMinutes"  withArguments:nil] intValue]];
@@ -130,7 +130,7 @@
 	[comps setDay   :[[obj callWebScriptMethod:@"getDate"	  withArguments:nil] intValue]];
 	[comps setMonth :[[obj callWebScriptMethod:@"getMonth"	  withArguments:nil] intValue] + 1];
 	[comps setYear  :[[obj callWebScriptMethod:@"getFullYear" withArguments:nil] intValue]];
-	NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSCalendar *gregorian = [[[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar] autorelease];
 	
 	NSDate *result = [gregorian dateFromComponents:comps];
 	NSLog(@"Date : %@",result);

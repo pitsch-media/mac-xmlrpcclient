@@ -53,7 +53,7 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D15AC360486D014006FF6A4 /* XMLRPCClient-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "XMLRPCClient-Info.plist"; sourceTree = "<group>"; };
-		8D15AC370486D014006FF6A4 /* XML-RPC Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XML-RPC Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D15AC370486D014006FF6A4 /* XML RPC Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XML RPC Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EA1EFC13228496004C1718 /* GSNSDataExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSNSDataExtensions.h; path = src/GSNSDataExtensions.h; sourceTree = "<group>"; };
 		D3EA1EFD13228496004C1718 /* GSNSDataExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSNSDataExtensions.m; path = src/GSNSDataExtensions.m; sourceTree = "<group>"; };
 		D3EA1EFF13228496004C1718 /* CURLHandle+extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CURLHandle+extras.h"; path = "src/CURLHandle/CURLHandle+extras.h"; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		19C28FB0FE9D524F11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D15AC370486D014006FF6A4 /* XML-RPC Client.app */,
+				8D15AC370486D014006FF6A4 /* XML RPC Client.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,7 +311,7 @@
 			name = "XML-RPC Client";
 			productInstallPath = "$(HOME)/Applications";
 			productName = xmlrpc;
-			productReference = 8D15AC370486D014006FF6A4 /* XML-RPC Client.app */;
+			productReference = 8D15AC370486D014006FF6A4 /* XML RPC Client.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -446,7 +446,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "XMLRPCClient-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = "XML-RPC Client";
+				PRODUCT_NAME = "XML RPC Client";
 				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
@@ -463,7 +463,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "XMLRPCClient-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
-				PRODUCT_NAME = "XML-RPC Client";
+				PRODUCT_NAME = "XML RPC Client";
 				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
